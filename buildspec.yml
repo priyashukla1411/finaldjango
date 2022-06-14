@@ -14,8 +14,8 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...          
-      - docker build -t django .
-      - docker tag django:latest 318451290319.dkr.ecr.us-east-1.amazonaws.com/django:latest
+      - docker build -t 318451290319.dkr.ecr.us-east-1.amazonaws.com/django .
+      #- docker tag django:latest 318451290319.dkr.ecr.us-east-1.amazonaws.com/django:latest
   post_build:
     commands:
       - echo Build completed on `date`
